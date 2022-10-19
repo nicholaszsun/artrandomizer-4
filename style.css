@@ -1,33 +1,40 @@
-/*Custom Font*/
-@font-face {
-  font-family: 'lemonmilk-medium';
-  src: url('E:\nicholaszsunGITHUB\artrandomizer-3\Fonts\LEMONMILK-Medium.ttf') format('truetype');
+*{
+  margin:0;
+  padding:0;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-canvas {
-  display: block;
-}
-
-
-/*Creating Class to allow p5 to pull from style.ccs
-Objective is to make a button*/
-.randomizerButton {
-  padding: 20px;
-  background: #28b07a;
-  font-family: lemonmilk-medium;
-  font-style: normal;
-  font-weight: bold;
-  font-variant: all-small-caps;
+body{
+  height: 100vh;
+  width: 100%;
   font-family: sans-serif;
-  border-top-width: normal;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  height: auto;
+  display: flex;
+}
 
+.container{
+  background: linear-gradient(0deg, #FF928B, #FFAC81);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.list-title{
+  background-color: #F6DDCC;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 600px;
+  border-radius: 20px;
+  height: 500px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.header{
+  padding: 2em;
+}
+
+.header h1{
+  color: green;
+  text-align: center;
 }
