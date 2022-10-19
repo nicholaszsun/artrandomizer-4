@@ -1,3 +1,9 @@
+/*Custom Font*/
+@font-face {
+  font-family: 'lemonmilk-medium';
+  src: url('E:\nicholaszsunGITHUB\artrandomizer-3\Fonts\LEMONMILK-Medium.ttf') format('truetype');
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,18 +11,14 @@ html, body {
 canvas {
   display: block;
 }
-/*Custom Font*/
-@font-face {
-  font-family: 'Lemon/Milk';
-  src: url('http://www.fontsaddict.com/fontface/lemonmilk.ttf');
-}
+
 
 /*Creating Class to allow p5 to pull from style.ccs
 Objective is to make a button*/
 .randomizerButton {
   padding: 20px;
   background: #28b07a;
-  font-family: Lemon/Milk;
+  font-family: lemonmilk-medium;
   font-style: normal;
   font-weight: bold;
   font-variant: all-small-caps;
