@@ -35,7 +35,7 @@ function setup() {
   background(230);
   fill(0, 102, 153);
   textSize(32);
-  text("Click to Randomize", 150, y);
+  // text("Click to Randomize", 150, y);
 
   setTimeout(changeBackground, 1000);
 
