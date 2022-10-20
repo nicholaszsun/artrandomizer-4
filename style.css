@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(0deg, #FF928B, #FFAC81);
 }
-/*Used to centeralized following classes to the center*/
+/*Used to centeralize following classes to the center*/
 .wrapper{
   width: 605px;
   background: #FFF;
@@ -80,38 +80,4 @@ body {
   border-radius: 30px;
   background: linear-gradient(0deg, #FF928B, #FFAC81);
 }
-/*
-.list-title {
-  background-color: #F6DDCC;
-  display: flex;
-  flex-direction: column;
-  min-width: 400px;
-  max-width: 600px;
-  border-radius: 20px;
-  height: 500px;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
-}
 
-.header {
-  padding: 2em;
-}
-
-.header h1 {
-  color: black;
-  text-align: center;
-}
-
-.list {
-  flex-grow: 1;
-  padding: 2em;
-  overflow-y: scroll;
-}
-
-.add {
-  padding: 2em;
-  flex-grow: 1;
-}
-
-.add imput {
-  border: 1px
-}
