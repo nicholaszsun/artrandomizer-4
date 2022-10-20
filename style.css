@@ -23,15 +23,19 @@ body {
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
 }
 /*Used to change look of the Header*/
-.wrapper header{
+.wrapper .title{
   font-size: 35px;
   font-weight: bold;
   text-align: center;
+}
+.title i:{
+font-size:15px;
 }
 /*Margins to set content to the wrapper*/
 .wrapper .content{
   margin: 35px 0;
 }
+.
 /*used to adjust random topics text length to the content and wrapper*/
 .content .topic-area{
   display: flex;
