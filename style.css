@@ -1,25 +1,87 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  /*Universal Commands*/
+  margin: 0;
+  padding: 0;
+/*box-sizing accounts for and border and padding in the values specified for an elements width and height*/
+  box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
 }
 
-body{
-  height: 100vh;
-  width: 100%;
-  font-family: sans-serif;
+body {
   display: flex;
-}
-
-.container{
-  background: linear-gradient(0deg, #FF928B, #FFAC81);
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(0deg, #FF928B, #FFAC81);
 }
-
-.list-title{
+/*Used to centeralized following classes to the center*/
+.wrapper{
+  width: 605px;
+  background: #FFF;
+  border-radius: 20px;
+  padding: 30px 30px 25px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+/*Used to change look of the Header*/
+.wrapper header{
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+/*Margins to set content to the wrapper*/
+.wrapper .content{
+  margin: 35px 0;
+}
+/*used to adjust random topics text length to the content and wrapper*/
+.content .topic-area{
+  display: flex;
+  justify-content: center;
+}
+/* Font size for topics */
+.topic-area .topic{
+  font-size: 22px;
+  text-align: center;
+  /* Creates break of text if topic exceeds wrapper dimensions */
+  word-break: break-all;
+}
+/* Line to create break between button and text */
+.wrapper .buttons{
+  border-top: 1px solid #ccc;
+}
+/* used as a sub class to not effect the button class in html*/
+.buttons .features{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+/* used as invisible object to center and place the still bored button to the right side*/
+.features ul{
+  display: flex;
+}
+/* invisible object to center and place the still bored button to the right side*/
+.features ul li{
+  list-style: none;
+  margin: 0 5px;
+  height: 47;
+  width: 47;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Designing of the DOM butte */
+.features button{
+  border: none;
+  outline: none;
+  color: #FFFf;
+  cursor: pointer;
+  font-style: 20px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: linear-gradient(0deg, #FF928B, #FFAC81);
+}
+/*
+.list-title {
   background-color: #F6DDCC;
   display: flex;
   flex-direction: column;
@@ -30,11 +92,26 @@ body{
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.header{
+.header {
   padding: 2em;
 }
 
-.header h1{
-  color: green;
+.header h1 {
+  color: black;
   text-align: center;
+}
+
+.list {
+  flex-grow: 1;
+  padding: 2em;
+  overflow-y: scroll;
+}
+
+.add {
+  padding: 2em;
+  flex-grow: 1;
+}
+
+.add imput {
+  border: 1px
 }
